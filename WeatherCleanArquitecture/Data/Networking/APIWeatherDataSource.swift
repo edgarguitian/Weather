@@ -17,7 +17,7 @@ class APIWeatherDataSource: APIWeatherDataSourceType {
     func getWeather(city: String) async -> Result<WeatherResponseDTO, HTTPClientError> {
         let queryParameters: [String: Any] = [
             "q": city,
-            "appid": "cb06bd6c75a78ffb5a7a891ae30e20c7",
+            "appid": "",
             "units": "metric",
             "lang": "es"
         ]
