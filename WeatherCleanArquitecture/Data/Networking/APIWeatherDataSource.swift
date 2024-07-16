@@ -24,6 +24,7 @@ class APIWeatherDataSource: APIWeatherDataSourceType {
 
         let endpoint = Endpoint(path: "data/2.5/weather",
                                 queryParameters: queryParameters,
+                                body: [:],
                                 method: .get)
 
         let result = await httpClient.makeRequest(endpoint: endpoint, baseUrl: "http://api.openweathermap.org/")

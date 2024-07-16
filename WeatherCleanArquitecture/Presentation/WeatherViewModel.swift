@@ -13,7 +13,8 @@ final class WeatherViewModel: ObservableObject {
     @Published var showLoadingSpinner: Bool = false
     @Published var showErrorMessage: String?
     @Published var weatherInfo: WeatherResponse
-    
+    @Published var weatherSuccess: Bool = false
+
     init(getWeather: GetWeatherType, errorMapper: WeatherPresentableErrorMapper) {
         self.getWeather = getWeather
         self.errorMapper = errorMapper
@@ -33,10 +34,11 @@ final class WeatherViewModel: ObservableObject {
             return
         }
         
-        print(weatherInfo)
         Task { @MainActor in
             self.weatherInfo = weatherInfo
             showLoadingSpinner = false
+            self.weatherSuccess = true
+            print("--> Here")
         }
     }
     
@@ -44,6 +46,7 @@ final class WeatherViewModel: ObservableObject {
         Task { @MainActor in
             showLoadingSpinner = false
             showErrorMessage = errorMapper.map(error: error)
+            print("--> Here2")
         }
     }
 }

@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6D186DE52C465651008B5ED3 /* SharedURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D186DE42C465651008B5ED3 /* SharedURLSession.swift */; };
+		6D186DE72C46566C008B5ED3 /* URLSessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D186DE62C46566C008B5ED3 /* URLSessionType.swift */; };
+		6D186DF82C467F27008B5ED3 /* CombineExpectations in Frameworks */ = {isa = PBXBuildFile; productRef = 6D186DF72C467F27008B5ED3 /* CombineExpectations */; };
 		6DD2E9692B471709006DE3CE /* WeatherCleanArquitectureApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD2E9682B471709006DE3CE /* WeatherCleanArquitectureApp.swift */; };
 		6DD2E96B2B471709006DE3CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD2E96A2B471709006DE3CE /* ContentView.swift */; };
 		6DD2E96D2B47170A006DE3CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DD2E96C2B47170A006DE3CE /* Assets.xcassets */; };
@@ -36,7 +39,20 @@
 		6DD2E9B52B47226F006DE3CE /* WeatherFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD2E9B42B47226F006DE3CE /* WeatherFactory.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		6D186DBF2C458757008B5ED3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DD2E95D2B471709006DE3CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6DD2E9642B471709006DE3CE;
+			remoteInfo = WeatherCleanArquitecture;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		6D186DBB2C458757008B5ED3 /* WeatherCleanArquitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherCleanArquitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6D186DE42C465651008B5ED3 /* SharedURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedURLSession.swift; sourceTree = "<group>"; };
+		6D186DE62C46566C008B5ED3 /* URLSessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionType.swift; sourceTree = "<group>"; };
 		6DD2E9652B471709006DE3CE /* WeatherCleanArquitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherCleanArquitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DD2E9682B471709006DE3CE /* WeatherCleanArquitectureApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCleanArquitectureApp.swift; sourceTree = "<group>"; };
 		6DD2E96A2B471709006DE3CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -68,7 +84,19 @@
 		6DD2E9B62B47250F006DE3CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		6D186DBC2C458757008B5ED3 /* WeatherCleanArquitectureTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = WeatherCleanArquitectureTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		6D186DB82C458757008B5ED3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D186DF82C467F27008B5ED3 /* CombineExpectations in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DD2E9622B471709006DE3CE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -83,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				6DD2E9672B471709006DE3CE /* WeatherCleanArquitecture */,
+				6D186DBC2C458757008B5ED3 /* WeatherCleanArquitectureTests */,
 				6DD2E9662B471709006DE3CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				6DD2E9652B471709006DE3CE /* WeatherCleanArquitecture.app */,
+				6D186DBB2C458757008B5ED3 /* WeatherCleanArquitectureTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -261,6 +291,8 @@
 				6DD2E9A62B471F2F006DE3CE /* URLSessionHTTPCLient.swift */,
 				6DD2E9A82B471F40006DE3CE /* URLSessionErrorResolver.swift */,
 				6DD2E9AA2B471F54006DE3CE /* URLSessionRequestMaker.swift */,
+				6D186DE42C465651008B5ED3 /* SharedURLSession.swift */,
+				6D186DE62C46566C008B5ED3 /* URLSessionType.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -277,6 +309,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		6D186DBA2C458757008B5ED3 /* WeatherCleanArquitectureTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6D186DC32C458757008B5ED3 /* Build configuration list for PBXNativeTarget "WeatherCleanArquitectureTests" */;
+			buildPhases = (
+				6D186DB72C458757008B5ED3 /* Sources */,
+				6D186DB82C458757008B5ED3 /* Frameworks */,
+				6D186DB92C458757008B5ED3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6D186DC02C458757008B5ED3 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				6D186DBC2C458757008B5ED3 /* WeatherCleanArquitectureTests */,
+			);
+			name = WeatherCleanArquitectureTests;
+			packageProductDependencies = (
+				6D186DF72C467F27008B5ED3 /* CombineExpectations */,
+			);
+			productName = WeatherCleanArquitectureTests;
+			productReference = 6D186DBB2C458757008B5ED3 /* WeatherCleanArquitectureTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		6DD2E9642B471709006DE3CE /* WeatherCleanArquitecture */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6DD2E9732B47170A006DE3CE /* Build configuration list for PBXNativeTarget "WeatherCleanArquitecture" */;
@@ -301,9 +357,13 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1510;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1510;
 				TargetAttributes = {
+					6D186DBA2C458757008B5ED3 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 6DD2E9642B471709006DE3CE;
+					};
 					6DD2E9642B471709006DE3CE = {
 						CreatedOnToolsVersion = 15.1;
 					};
@@ -318,16 +378,27 @@
 				Base,
 			);
 			mainGroup = 6DD2E95C2B471709006DE3CE;
+			packageReferences = (
+				6D186DF62C467F27008B5ED3 /* XCRemoteSwiftPackageReference "CombineExpectations" */,
+			);
 			productRefGroup = 6DD2E9662B471709006DE3CE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				6DD2E9642B471709006DE3CE /* WeatherCleanArquitecture */,
+				6D186DBA2C458757008B5ED3 /* WeatherCleanArquitectureTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		6D186DB92C458757008B5ED3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DD2E9632B471709006DE3CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -340,6 +411,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		6D186DB72C458757008B5ED3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6DD2E9612B471709006DE3CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -349,9 +427,11 @@
 				6DD2E9B12B4720E0006DE3CE /* WeatherPresentableErrorMapper.swift in Sources */,
 				6DD2E9A72B471F2F006DE3CE /* URLSessionHTTPCLient.swift in Sources */,
 				6DD2E9AF2B47208B006DE3CE /* WeatherViewModel.swift in Sources */,
+				6D186DE52C465651008B5ED3 /* SharedURLSession.swift in Sources */,
 				6DD2E9992B471AD7006DE3CE /* HTTPClientError.swift in Sources */,
 				6DD2E9912B4719C3006DE3CE /* WeatherRepositoryType.swift in Sources */,
 				6DD2E96B2B471709006DE3CE /* ContentView.swift in Sources */,
+				6D186DE72C46566C008B5ED3 /* URLSessionType.swift in Sources */,
 				6DD2E9932B471A1D006DE3CE /* WeatherRepository.swift in Sources */,
 				6DD2E9952B471A73006DE3CE /* WeatherDomainErrorMapper.swift in Sources */,
 				6DD2E98F2B47197C006DE3CE /* WeatherDomainError.swift in Sources */,
@@ -374,7 +454,59 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		6D186DC02C458757008B5ED3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6DD2E9642B471709006DE3CE /* WeatherCleanArquitecture */;
+			targetProxy = 6D186DBF2C458757008B5ED3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		6D186DC12C458757008B5ED3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 648JG79GLR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.WeatherCleanArquitectureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherCleanArquitecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherCleanArquitecture";
+			};
+			name = Debug;
+		};
+		6D186DC22C458757008B5ED3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 648JG79GLR;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.edgar.WeatherCleanArquitectureTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeatherCleanArquitecture.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/WeatherCleanArquitecture";
+			};
+			name = Release;
+		};
 		6DD2E9712B47170A006DE3CE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -557,6 +689,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		6D186DC32C458757008B5ED3 /* Build configuration list for PBXNativeTarget "WeatherCleanArquitectureTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6D186DC12C458757008B5ED3 /* Debug */,
+				6D186DC22C458757008B5ED3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		6DD2E9602B471709006DE3CE /* Build configuration list for PBXProject "WeatherCleanArquitecture" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -576,6 +717,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		6D186DF62C467F27008B5ED3 /* XCRemoteSwiftPackageReference "CombineExpectations" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/groue/CombineExpectations.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		6D186DF72C467F27008B5ED3 /* CombineExpectations */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 6D186DF62C467F27008B5ED3 /* XCRemoteSwiftPackageReference "CombineExpectations" */;
+			productName = CombineExpectations;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 6DD2E95D2B471709006DE3CE /* Project object */;
 }

@@ -96,7 +96,9 @@ struct WeatherView: View {
             }
         }
         .onAppear {
-            viewModel.onAppear(city: "Barcelona")
+            Task {
+                await viewModel.onAppear(city: "Barcelona")
+            }
         }
     }
 }

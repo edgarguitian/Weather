@@ -1,0 +1,15 @@
+{
+  "originHash" : "03cff3abb7dc1d440524680985eb6406807f765a70a4792e0499450a5ddd6663",
+  "pins" : [
+    {
+      "identity" : "combineexpectations",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/groue/CombineExpectations.git",
+      "state" : {
+        "branch" : "master",
+        "revision" : "04d4e4b21c9e8361925f03f64a7ecda89ef9974f"
+      }
+    }
+  ],
+  "version" : 3
+}
